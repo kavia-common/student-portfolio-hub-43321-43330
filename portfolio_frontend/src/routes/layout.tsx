@@ -9,12 +9,13 @@ export const onGet: RequestHandler = async ({ cacheControl }) => {
   });
 };
 
+import { AppShell } from "../components/app-shell";
 // PUBLIC_INTERFACE
 export default component$(() => {
   useStyles$(styles);
   return (
-    <main>
+    <AppShell>
       <Slot />
-    </main>
+    </AppShell>
   );
 });

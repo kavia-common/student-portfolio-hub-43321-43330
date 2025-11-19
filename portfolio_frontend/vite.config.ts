@@ -1,4 +1,4 @@
-/**
+ /**
  * This is the base config for vite.
  * When building, the adapter config is used which loads this file and extends it.
  */
@@ -52,8 +52,7 @@ export default defineConfig(({ command, mode }): UserConfig => {
         "Cache-Control": "public, max-age=0",
       },
       port: 3000,
-      host: '0.0.0.0',
-      allowedHosts: ['.kavia.ai'],
+      host: '0.0.0.0'
     },
     preview: {
       headers: {

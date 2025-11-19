@@ -1,16 +1,7 @@
 /**
- * WHAT IS THIS FILE?
- *
- * Globally applied styles for the ultralight Qwik template.
- * Uses a minimalistic light theme with specified color scheme.
+ * Global styles: baseline for Ocean Professional dark theme.
+ * Remove previous light theme vars; using theme.css CSS variables instead.
  */
-
-:root {
-  --primary-color: #000000;
-  --secondary-color: #333333;
-  --accent-color: #0078d4;
-  --background-color: #ffffff;
-}
 
 html {
   line-height: 1.5;
@@ -26,16 +17,22 @@ html {
     Arial,
     "Noto Sans",
     sans-serif;
+  background: var(--background);
+  color: var(--text);
+  height: 100%;
 }
 
 body {
   margin: 0;
   padding: 0;
-  background-color: var(--background-color);
-  color: var(--primary-color);
+  min-height: 100vh;
+  background: var(--background);
+  color: var(--text);
   line-height: inherit;
+  font-family: inherit;
 }
 
 * {
   box-sizing: border-box;
+  font-family: inherit;
 }
